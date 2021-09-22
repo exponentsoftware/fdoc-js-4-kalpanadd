@@ -14,7 +14,7 @@ a{
 .header{
     width: 100vw;
     height: 10vh;
-    background-color: aqua;
+    background-color: rgb(243, 220, 186,0.3);
     display: flex;
     align-items: center;
     flex: 1;
@@ -33,36 +33,118 @@ margin: 50px;
     align-items: center;
     justify-content: space-evenly;
 }
+.header_nav > div :hover{
+    color:chocolate;
+    font-weight: bolder;
+}
 
 .home_intro{
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.85);
+}
+.social{
+    display: flex;
+}
+.home_intro > a > button{
+    padding: 10px;
+    background-color: #85f81a;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    width: 150px;
+    
+}
+.home_intro > a >button:hover{
+    background-color: blanchedalmond;
+    color: black;
+    cursor: pointer;
+}
+.about{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.about >a>button{
+    border: none;
+    padding: 10px;
+    background-color: chartreuse;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 50px;
+    width: 150px;
+}
+
+.skills{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.tech_icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.education{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.about{
-    width: 100vw;
-    height: 50vh;
-}
-.education{
-    width: 100vw;
-    height: 100vh;
-}
 .portfolio{
     width: 100vw;
-    height: 40vh;
+    min-height: 100vh;
+    padding: 80px 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
 }
+.project_category{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.project_first_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.project_second_div{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.amazon_div{
+    box-shadow: 20px 20px 35px black;
+}
+
 .contact{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: blueviolet;
+    padding: 80px 0 80px;
 }
 .contact_container{
     width: 100vw;
@@ -79,6 +161,5 @@ margin: 50px;
     border-radius: 10px;
     height: 100%;
     padding: 5rem;
-    box-shadow: 10px -20px 25px  black;
-
+    box-shadow: inset -10px -10px 30px black;
 }
